@@ -36,3 +36,15 @@ const (
 	Member     = 40
 	Guest      = 50
 )
+
+func accessGranted() {
+	fmt.Println("Granted")
+}
+
+func accessDenied() {
+	fmt.Println("Denied")
+}
+
+func weekday(day int) bool {
+	return day <= 4
+}
