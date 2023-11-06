@@ -25,7 +25,7 @@ package exercise
 import "fmt"
 
 func main() {
- 
+
 	//* Store your favorite color in a variable using the `var` keyword
 	var favoriteColor = "red"
 	fmt.Println("My favorite color is", favoriteColor)
