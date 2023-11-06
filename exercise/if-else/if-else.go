@@ -12,3 +12,27 @@
 //* Access weekends: Contractor
 //* Access weekdays: Member
 //* Access Mondays, Wednesdays, and Fridays: Guest
+
+package main
+
+import "fmt"
+
+// Days of the week
+const (
+	Monday    = 0
+	Tuesday   = 1
+	Wednesday = 2
+	Thursday  = 3
+	Friday    = 4
+	Saturday  = 5
+	Sunday    = 6
+)
+
+// User roles
+const (
+	Admin      = 10
+	Manager    = 20
+	Contractor = 30
+	Member     = 40
+	Guest      = 50
+)
