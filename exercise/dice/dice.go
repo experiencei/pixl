@@ -13,3 +13,12 @@
 //
 //--Notes:
 //* Use packages from the standard library to complete the project
+
+
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
