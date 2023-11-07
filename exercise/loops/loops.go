@@ -9,8 +9,11 @@
 //
 //--Notes:
 //* The remainder operator (%) can be used to determine divisibility
+package main
 
-func main()  {
+import "fmt"
+
+func main() {
    
 	//* Print integers 1 to 50, except:
 	for i := 1; i <= 50; i++ {
