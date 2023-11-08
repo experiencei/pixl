@@ -22,3 +22,10 @@ import "fmt"
 type Coordinate struct {
 	x, y int
 }
+
+
+//* Create a rectangle structure containing its coordinates
+type Rectangle struct {
+	a Coordinate // top left
+	b Coordinate // bottom right
+}
