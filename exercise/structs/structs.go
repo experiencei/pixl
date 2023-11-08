@@ -18,3 +18,7 @@
 package main
 
 import "fmt"
+
+type Coordinate struct {
+	x, y int
+}
