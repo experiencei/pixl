@@ -28,5 +28,8 @@ func main() {
 
 	fmt.Println(bill, ella)
 
-
+	var heidi Passenger
+	heidi.Name = "Heidi"
+	heidi.TicketNumber = 4
+	fmt.Println(heidi)
 }
