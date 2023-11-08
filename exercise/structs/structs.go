@@ -45,11 +45,26 @@ func area(rect Rectangle) int {
 }
 
 
-type Coordinate struct{
-	a, b int
+func perimeter(rect Rectangle) int {
+	return (width(rect) * 2) + (length(rect) * 2)
 }
 
-type Rectangle struct{
-	a Coordinate
-	b Coordinate
+//  - Print the results to the terminal
+func printInfo(rect Rectangle) {
+	fmt.Println("Area is", area(rect))
+	fmt.Println("Perimeter is", perimeter(rect))
+}
+
+func main() {
+	rect := Rectangle{a: Coordinate{0, 7}, b: Coordinate{10, 0}}
+	//  - Print the results to the terminal
+	printInfo(rect)
+
+	//* After performing the above requirements, double the size
+	//  of the existing rectangle and repeat the calculations
+	rect.a.y *= 2
+	rect.b.x *= 2
+	//  - Print the new results to the terminal
+	printInfo(rect)
+
 }
