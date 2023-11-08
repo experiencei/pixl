@@ -20,4 +20,13 @@ func main() {
 	casey := Passenger{"Casey", 1, false}
 	fmt.Println(casey)
 	
+
+	var (
+		bill = Passenger{Name: "Bill", TicketNumber: 2}
+		ella = Passenger{Name: "Ella", TicketNumber: 2}
+	)
+
+	fmt.Println(bill, ella)
+
+
 }
