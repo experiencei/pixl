@@ -22,3 +22,14 @@ import (
 	"math/rand"
 	"time"
 )
+
+func main() {
+	rand.Seed(time.Now().UnixNano())
+
+	//* The program must handle any number of dice, rolls, and sides
+	dice, sides := 2, 12
+	rolls := 1
+
+	
+
+}
