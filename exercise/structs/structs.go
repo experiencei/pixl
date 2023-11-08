@@ -43,3 +43,13 @@ func length(rect Rectangle) int {
 func area(rect Rectangle) int {
 	return length(rect) * width(rect)
 }
+
+
+type Coordinate struct{
+	a, b int
+}
+
+type Rectangle struct{
+	a Coordinate
+	b Coordinate
+}
