@@ -32,4 +32,13 @@ func main() {
 	heidi.Name = "Heidi"
 	heidi.TicketNumber = 4
 	fmt.Println(heidi)
+
+	casey.Boarded = true
+	bill.Boarded = true
+	if bill.Boarded {
+		fmt.Println("Bill has boarded the bus")
+	}
+	if casey.Boarded {
+		fmt.Println("Casey has boarded the bus")
+	}
 }
