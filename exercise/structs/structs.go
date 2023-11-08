@@ -33,3 +33,4 @@ type Rectangle struct {
 func width(rect Rectangle) int {
 	return (rect.b.x - rect.a.x)
 }
+
