@@ -41,4 +41,9 @@ func main() {
 	if casey.Boarded {
 		fmt.Println("Casey has boarded the bus")
 	}
+
+	heidi.Boarded = true
+	bus := Bus{heidi}
+	fmt.Println(bus)
+	fmt.Println(bus.FrontSeat.Name, "is in the front seat")
 }
