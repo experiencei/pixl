@@ -29,3 +29,7 @@ type Rectangle struct {
 	a Coordinate // top left
 	b Coordinate // bottom right
 }
+
+func width(rect Rectangle) int {
+	return (rect.b.x - rect.a.x)
+}
