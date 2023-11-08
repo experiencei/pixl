@@ -34,6 +34,10 @@ func width(rect Rectangle) int {
 	return (rect.b.x - rect.a.x)
 }
 
+func length(rect Rectangle) int {
+	return (rect.a.y - rect.b.y)
+}
+
 //* Using functions, calculate the area and perimeter of a rectangle,
 //  - The functions must use the rectangle structure as the function parameter
 func area(rect Rectangle) int {
