@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func greet() {
-	fmt.println("Hello from greet function")
+	fmt.Println("Hello from greet function")
 }
 
 
