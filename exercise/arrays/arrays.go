@@ -43,6 +43,8 @@ func printStats(list [4]Product) {
 	fmt.Println("Last item on the list:", list[totalItems-1])
 	fmt.Println("Total items:", totalItems)
 	fmt.Println("Total cost:", cost)
+
+	
 }
 
 func main() {
