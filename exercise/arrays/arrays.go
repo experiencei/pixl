@@ -24,6 +24,7 @@ type Product struct {
 	name  string
 }
 
+
 //* Print to the terminal:
 //  - The last item on the list
 //  - The total number of items
@@ -44,7 +45,7 @@ func printStats(list [4]Product) {
 	fmt.Println("Total items:", totalItems)
 	fmt.Println("Total cost:", cost)
 
-	
+
 }
 
 func main() {
