@@ -22,6 +22,12 @@ func main() {
 	route = append(route , "Home")
 	printSlice("Route 2", route)
 
+	fmt.Println()
+	fmt.Println(route[0], "visited")
+	fmt.Println(route[1], "visited")
+
+	route = route[2:]
+	printSlice("Remaining locations" , route)
 
 
 }
