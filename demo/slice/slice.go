@@ -16,5 +16,9 @@ func printSlice(title string , slice []string) {
 
 
 func main() {
+	route := []string{"Grocery", "Department Store", "Salon"}
+	printSlice("Route 1" , route)
+
+	route = append(route , "Home")
 
 }
