@@ -20,5 +20,8 @@ func main() {
 	printSlice("Route 1" , route)
 
 	route = append(route , "Home")
+	printSlice("Route 2", route)
+
+
 
 }
