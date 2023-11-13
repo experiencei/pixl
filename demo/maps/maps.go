@@ -13,4 +13,9 @@ func main() {
 
 	delete(shoppingList, "milk")
 	fmt.Println(shoppingList)
+
+	fmt.Println("need", shoppingList["eggs"], "eggs")
+
+	cereal, found := shoppingList["cereal"]
+	fmt.Println("Need cereal?")
 }
