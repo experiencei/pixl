@@ -11,5 +11,6 @@ func main() {
 	shoppingList["eggs"] += 1
 	fmt.Println(shoppingList)
 
-	
+	delete(shoppingList, "milk")
+	fmt.Println(shoppingList)
 }
