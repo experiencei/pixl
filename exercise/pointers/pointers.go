@@ -51,3 +51,8 @@ func checkout(items []Item) {
 		deactivate(&items[i].tag)
 	}
 }
+
+func main() {
+
+	
+}
