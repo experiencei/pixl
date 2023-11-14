@@ -24,4 +24,7 @@ func main() {
 	} else {
 		fmt.Println("yup:", cereal, "boxes")
 	}
+
+	totalItems := 0
+
 }
