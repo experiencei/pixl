@@ -36,5 +36,6 @@ func main() {
 	for _ , server := range servers {
 		serverStatus[server] = Online
 	}
-
+ 
+	
 }
