@@ -13,3 +13,13 @@
 //  - Deactivate any one security tag in the array/slice
 //  - Call the checkout() function to deactivate all tags
 //  - Print out the array/slice after each change
+
+
+package main
+
+import "fmt"
+
+const (
+	Active   = true
+	Inactive = false
+)
