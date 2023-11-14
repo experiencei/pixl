@@ -16,3 +16,16 @@ func replace(old *string, new string, counter *Counter) {
 	*old = new
 	increment(counter)
 }
+
+func main() {
+	counter := Counter{}
+
+	hello := "Hello"
+	world := "World!"
+	fmt.Println(hello, world)
+
+	// Pointer to hello
+	replace(&hello, "Hi", &counter)
+	fmt.Println(hello, world)
+
+}
