@@ -33,3 +33,13 @@ type Item struct {
 	name string
 	tag  SecurityTag
 }
+
+
+//* Create functions to activate and deactivate security tags using pointers
+func activate(tag *SecurityTag) {
+	*tag = Active
+}
+
+func deactivate(tag *SecurityTag) {
+	*tag = Inactive
+}
