@@ -43,3 +43,11 @@ func activate(tag *SecurityTag) {
 func deactivate(tag *SecurityTag) {
 	*tag = Inactive
 }
+
+//* Create a checkout() function which can deactivate all tags in a slice
+func checkout(items []Item) {
+	fmt.Println("checking out...")
+	for i := 0; i < len(items); i++ {
+		deactivate(&items[i].tag)
+	}
+}
