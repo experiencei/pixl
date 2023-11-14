@@ -27,3 +27,10 @@ const (
 	Maintenance = 2
 	Retired     = 3
 )
+
+func main() {
+	servers := []string{"darkstar", "aiur", "omicron", "w359", "baseline"}
+
+	serverStatus := make(map[string]int)
+
+}
