@@ -56,6 +56,8 @@ func printServerStatus(servers map[string]int) {
 	fmt.Println(stats[Retired], "servers are retired")
 }
 
+
+
 func main() {
 	servers := []string{"darkstar", "aiur", "omicron", "w359", "baseline"}
 
@@ -65,5 +67,15 @@ func main() {
 		serverStatus[server] = Online
 	}
  
+
+	//* Perform the following status changes and display server info:
+	//  - display server info
+	printServerStatus(serverStatus)
+
+	//  - change `darkstar` to `Retired`
+	serverStatus["darkstar"] = Retired
+	//  - change `aiur` to `Offline`
+	serverStatus["aiur"] = Offline
+
 
 }
