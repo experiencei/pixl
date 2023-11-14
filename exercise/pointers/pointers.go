@@ -64,4 +64,13 @@ func main() {
 	//  - Store them in a slice or array
 	items := []Item{shirt, pants, purse, watch}
 	fmt.Println(items)
+
+	
+	//  - Deactivate any one security tag in the array/slice
+	deactivate(&items[0].tag)
+	fmt.Println(items)
+
+	//  - Call the checkout() function to deactivate all tags
+	checkout(items)
+	fmt.Println(items)
 }
