@@ -23,3 +23,13 @@ const (
 	Active   = true
 	Inactive = false
 )
+
+
+//  - Security tags have two states: active (true) and inactive (false)
+type SecurityTag bool
+
+//* Create a structure to store items and their security tag state
+type Item struct {
+	name string
+	tag  SecurityTag
+}
