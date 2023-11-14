@@ -53,6 +53,11 @@ func checkout(items []Item) {
 }
 
 func main() {
+  //* Perform the following:
+	//  - Create at least 4 items, all with active security tags
+	shirt := Item{"Shirt", Active}
+	pants := Item{"Pants", Active}
+	purse := Item{"Purse", Active}
+	watch := Item{"Watch", Active}
 
-	
 }
