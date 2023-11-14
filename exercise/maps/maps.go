@@ -14,3 +14,16 @@
 //  - display server info
 //  - change all servers to `Maintenance`
 //  - display server info
+
+
+
+package main
+
+import "fmt"
+
+const (
+	Online      = 0
+	Offline     = 1
+	Maintenance = 2
+	Retired     = 3
+)
