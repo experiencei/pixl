@@ -61,12 +61,12 @@ func printServerStatus(servers map[string]int) {
 func main() {
 	servers := []string{"darkstar", "aiur", "omicron", "w359", "baseline"}
 
+	//* Store the existing slice of servers in a map
 	serverStatus := make(map[string]int)
-
-	for _ , server := range servers {
+	//* Default all of the servers to `Online`
+	for _, server := range servers {
 		serverStatus[server] = Online
 	}
- 
 
 	//* Perform the following status changes and display server info:
 	//  - display server info
@@ -89,6 +89,5 @@ func main() {
 		}
 		//  - display server info
 		printServerStatus(serverStatus)
-
 
 }
