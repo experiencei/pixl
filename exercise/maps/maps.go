@@ -28,6 +28,11 @@ const (
 	Retired     = 3
 )
 func printServerInfo(servers map[string]int) {
+	fmt.Println("\nThere are" , len(servers) , "servers")
+
+	stats := make(map[string]int)
+
+	for _, server := range servers {}
 
 }
 func main() {
