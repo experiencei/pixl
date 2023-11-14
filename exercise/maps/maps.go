@@ -27,7 +27,9 @@ const (
 	Maintenance = 2
 	Retired     = 3
 )
+func printServerInfo(servers map[string]int) {
 
+}
 func main() {
 	servers := []string{"darkstar", "aiur", "omicron", "w359", "baseline"}
 
@@ -37,5 +39,5 @@ func main() {
 		serverStatus[server] = Online
 	}
  
-	
+
 }
