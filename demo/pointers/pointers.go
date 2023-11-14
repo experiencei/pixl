@@ -11,3 +11,8 @@ func increment(counter *Counter) {
 	counter.hits += 1
 	fmt.Println("Counter", counter)
 }
+
+func replace(old *string, new string, counter *Counter) {
+	*old = new
+	increment(counter)
+}
