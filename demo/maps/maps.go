@@ -18,4 +18,10 @@ func main() {
 
 	cereal, found := shoppingList["cereal"]
 	fmt.Println("Need cereal?")
+
+	if !found {
+		fmt.Println("nope")
+	} else {
+		fmt.Println("yup:", cereal, "boxes")
+	}
 }
