@@ -33,4 +33,8 @@ func main() {
 
 	serverStatus := make(map[string]int)
 
+	for _ , server := range servers {
+		serverStatus[server] = Online
+	}
+
 }
