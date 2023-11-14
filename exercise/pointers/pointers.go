@@ -60,4 +60,8 @@ func main() {
 	purse := Item{"Purse", Active}
 	watch := Item{"Watch", Active}
 
+
+	//  - Store them in a slice or array
+	items := []Item{shirt, pants, purse, watch}
+	fmt.Println(items)
 }
