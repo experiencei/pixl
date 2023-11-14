@@ -78,4 +78,17 @@ func main() {
 	serverStatus["aiur"] = Offline
 
 
+		//  - display server info
+		printServerStatus(serverStatus)
+
+		//  - change all servers to `Maintenance`
+		for server, status := range serverStatus {
+			if status == Online {
+				serverStatus[server] = Maintenance
+			}
+		}
+		//  - display server info
+		printServerStatus(serverStatus)
+
+
 }
