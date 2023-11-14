@@ -28,4 +28,10 @@ func main() {
 	replace(&hello, "Hi", &counter)
 	fmt.Println(hello, world)
 
+	phrase := []string{hello, world}
+	fmt.Println(phrase)
+
+	// Pointer to `world` in the `phrase` slice
+	replace(&phrase[1], "Go!", &counter)
+	fmt.Println(phrase)
 }
