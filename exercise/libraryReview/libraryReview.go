@@ -15,4 +15,4 @@
 //
 //--Notes:
 //* Use the `time` package from the standard library for check in/out times
-//* Liberal us
+//* Liberal use of type aliases, structs, and maps will help organize this project
