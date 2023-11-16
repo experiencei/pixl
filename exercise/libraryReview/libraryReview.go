@@ -99,3 +99,27 @@ func returnBook(library *Library, title Title, member *Member) bool {
 	member.books[title] = audit
 	return true
 }
+
+
+func checkoutBook(library *Library, title Title, member *Member) bool {
+	// Make sure the book is part of the library
+	book, found := library.books[title]
+	if !found {
+		fmt.Println("Book not part of library")
+		return false
+	}
+	// Make sure we have enough to lend
+	if book.lended == book.total {
+		fmt.Println("No more of that book is available")
+		return false
+	}
+
+	// Update library
+	book.lended += 1
+	library.books[title] = book
+
+	// Update member info
+	member.books[title] = LendAudit{checkOut: time.Now()}
+
+	return true
+}
