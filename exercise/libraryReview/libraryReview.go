@@ -74,3 +74,28 @@ func printLibraryBooks(library *Library) {
 	}
 	fmt.Println()
 }
+
+
+func returnBook(library *Library, title Title, member *Member) bool {
+	// Make sure the book is part of this library
+	book, found := library.books[title]
+	if !found {
+		fmt.Println("Book not part of library")
+		return false
+	}
+	// Make sure the member checked out the book
+	audit, found := member.books[title]
+	if !found {
+		fmt.Println("Member did not check out this book")
+		return true
+	}
+
+	// Update library
+	book.lended -= 1
+	library.books[title] = book
+
+	// Update member info
+	audit.checkIn = time.Now()
+	member.books[title] = audit
+	return true
+}
