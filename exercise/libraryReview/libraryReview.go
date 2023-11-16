@@ -58,3 +58,10 @@ func printMemberAudit(member *Member) {
 		fmt.Println(member.name, ":", title, ":", audit.checkOut.String(), "through", returnTime)
 	}
 }
+
+
+func printMemberAudits(library *Library) {
+	for _, member := range library.members {
+		printMemberAudit(&member)
+	}
+}
