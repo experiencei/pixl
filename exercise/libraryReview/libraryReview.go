@@ -65,3 +65,12 @@ func printMemberAudits(library *Library) {
 		printMemberAudit(&member)
 	}
 }
+
+
+func printLibraryBooks(library *Library) {
+	fmt.Println()
+	for title, book := range library.books {
+		fmt.Println(title, "/ total:", book.total, "/ lended:", book.lended)
+	}
+	fmt.Println()
+}
