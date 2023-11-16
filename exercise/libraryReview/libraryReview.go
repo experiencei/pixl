@@ -46,3 +46,15 @@ type Library struct {
 	members map[Name]Member
 	books   map[Title]BookEntry
 }
+
+func printMemberAudit(member *Member) {
+	for title, audit := range member.books {
+		var returnTime string
+		if audit.checkIn.IsZero() {
+			returnTime = "[not returned yet]"
+		} else {
+			returnTime = audit.checkIn.String()
+		}
+		fmt.Println(member.name, ":", title, ":", audit.checkOut.String(), "through", returnTime)
+	}
+}
