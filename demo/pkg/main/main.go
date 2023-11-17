@@ -2,9 +2,14 @@
 package main
 
 import (
-	"coursecontent/demo/pkg/display"
-	"coursecontent/demo/pkg/msg"
+	"pixlProj/demo/pkg/display"
+	"pixlProj/demo/pkg/msg"
 )
+
+// import (
+// 	"coursecontent/demo/pkg/display"
+// 	"coursecontent/demo/pkg/msg"
+// )
 
 func main() {
 	msg.Hi()
