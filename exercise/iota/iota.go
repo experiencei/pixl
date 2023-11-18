@@ -11,3 +11,15 @@
 //
 //--Notes:
 //* Your program is complete when it compiles and prints the correct results
+
+package main
+
+import "fmt"
+
+//* Mathematical operations must be defined as constants using iota
+const (
+	Add = iota
+	Subtract
+	Multiply
+	Divide
+)
