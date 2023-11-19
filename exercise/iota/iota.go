@@ -24,6 +24,9 @@ const (
 	Divide
 )
 
+type Operation int
+
+
 //* Write a receiver function that performs the mathematical operation
 //  on two operands
 func (op Operation) calculate(lhs, rhs int) int {
