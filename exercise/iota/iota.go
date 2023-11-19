@@ -23,3 +23,19 @@ const (
 	Multiply
 	Divide
 )
+
+
+func main() {
+	//* The existing function calls in main() represent the API and cannot be changed
+	add := Operation(Add)
+	fmt.Println(add.calculate(2, 2)) // = 4
+
+	sub := Operation(Subtract)
+	fmt.Println(sub.calculate(10, 3)) // = 7
+
+	mul := Operation(Multiply)
+	fmt.Println(mul.calculate(3, 3)) // = 9
+
+	div := Operation(Divide)
+	fmt.Println(div.calculate(100, 2)) // = 50
+}
