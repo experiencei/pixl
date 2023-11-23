@@ -17,3 +17,4 @@ func (q *Queue) Append(item int) bool {
 	q.items = append(q.items, item)
 	return true
 }
+
