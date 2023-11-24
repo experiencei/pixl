@@ -10,3 +10,18 @@
 //
 //--Notes:
 //* Use `go test -v ./exercise/testing` to run these specific tests
+
+
+package main
+
+import "testing"
+
+func newPlayer() Player {
+	return Player{
+		name:      "test",
+		health:    100,
+		maxHealth: 100,
+		energy:    500,
+		maxEnergy: 500,
+	}
+}
