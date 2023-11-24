@@ -20,7 +20,10 @@ func (q *Queue) Append(item int) bool {
 
 func (q *Queue) Next() (int, bool) {
 	if len(q.items) > 0 {
+		// since it fifo (get the first item)
 		next := q.items[0]
+
+		// re-slice the rest of the items
 		q.items = q.items[1:]
 		return next, true
 	} else {
