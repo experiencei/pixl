@@ -43,3 +43,22 @@ func TestHealth(t *testing.T) {
 	}
 
 }
+
+
+func TestEnergy(t *testing.T) {
+	player := newPlayer()
+	player.addEnergy(999)
+	//  - Health & energy can not go above their maximums
+	if player.energy > player.maxEnergy {
+		t.Fatalf("Energy went over limit: %v, want: %v", player.energy, player.maxEnergy)
+	}
+	player.consumeEnergy(player.maxEnergy + 1)
+	//  - Health & energy can not go below 0
+	if player.energy < 0 {
+		t.Fatalf("Energy: %v. Minimum: 0", player.energy)
+	}
+	if player.energy > player.maxEnergy {
+		t.Fatalf("Energy: %v. Maximum: %v", player.energy, player.maxEnergy)
+	}
+
+}
