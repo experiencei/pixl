@@ -27,3 +27,9 @@ func prepareDishes(dishes []Preparer) {
 	}
 	fmt.Println()
 }
+
+func main() {
+	dishes := []Preparer{Chicken("Chicken Wings"), Salad("Iceberg Salad")}
+	prepareDishes(dishes)
+
+}
