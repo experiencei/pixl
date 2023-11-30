@@ -55,3 +55,15 @@ func (c Car) String() string {
 func (t Truck) String() string {
 	return fmt.Sprintf("Truck: %v", string(t))
 }
+
+func (m Motorcycle) PickLift() Lift {
+	return SmallLift
+}
+
+func (c Car) PickLift() Lift {
+	return StandardLift
+}
+
+func (t Truck) PickLift() Lift {
+	return LargeLift
+}
