@@ -13,3 +13,20 @@
 //* Use the `strings` package from stdlib to get time components
 //* Use the `strconv` package from stdlib to convert strings to ints
 //* Use the `errors` package to generate errors
+
+package timeparse
+
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
+
+type Time struct {
+	hour, minute, second int
+}
+
+type TimeParseError struct {
+	msg   string
+	input string
+}
