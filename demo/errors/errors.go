@@ -11,7 +11,7 @@ type Stuff struct {
 
 func (s *Stuff) Get(index int) (int, error) {
 	if index > len(s.values) {
-		return 0, errors.New(fmt.Sprintf("no element at index %v", index))
+		return 0, fmt.Errorf(fmt.Sprintf("no element at index %v", index))
 	} else {
 		return s.values[index], nil
 	}
