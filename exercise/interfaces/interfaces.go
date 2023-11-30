@@ -80,3 +80,14 @@ func sendToLift(p LiftPicker) {
 		fmt.Printf("send %v to large lift\n", p)
 	}
 }
+
+func main() {
+	car := Car("Sporty")
+	truck := Truck("MountainCrusher")
+	motorcycle := Motorcycle("Croozer")
+	//* Direct at least 1 of each vehicle type to the correct
+	//  lift, and print out the vehicle information.
+	sendToLift(car)
+	sendToLift(truck)
+	sendToLift(motorcycle)
+}
