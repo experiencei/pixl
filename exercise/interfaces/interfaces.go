@@ -40,3 +40,18 @@ type LiftPicker interface {
 type Motorcycle string
 type Car string
 type Truck string
+
+//* Vehicles have a model name in addition to the vehicle type:
+func (m Motorcycle) String() string {
+	return fmt.Sprintf("Motorcycle: %v", string(m))
+}
+
+//* Vehicles have a model name in addition to the vehicle type:
+func (c Car) String() string {
+	return fmt.Sprintf("Car: %v", string(c))
+}
+
+//* Vehicles have a model name in addition to the vehicle type:
+func (t Truck) String() string {
+	return fmt.Sprintf("Truck: %v", string(t))
+}
