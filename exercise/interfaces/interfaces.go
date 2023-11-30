@@ -30,3 +30,9 @@ const (
 	StandardLift
 	LargeLift
 )
+
+type Lift int
+
+type LiftPicker interface {
+	PickLift() Lift
+}
