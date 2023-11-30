@@ -16,3 +16,17 @@
 //
 //--Notes:
 //* Use any names for vehicle models
+
+package main
+
+import "fmt"
+
+//* The shop has lifts for multiple vehicle sizes/types:
+//  - Motorcycles: small lifts
+//  - Cars: standard lifts
+//  - Trucks: large lifts
+const (
+	SmallLift = iota
+	StandardLift
+	LargeLift
+)
