@@ -36,3 +36,7 @@ type Lift int
 type LiftPicker interface {
 	PickLift() Lift
 }
+
+type Motorcycle string
+type Car string
+type Truck string
