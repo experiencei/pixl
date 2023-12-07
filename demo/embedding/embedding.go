@@ -7,3 +7,8 @@ const (
 	Medium
 	Large
 )
+
+const (
+	Ground = iota
+	Air
+)
