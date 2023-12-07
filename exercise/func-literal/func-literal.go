@@ -15,3 +15,10 @@
 //
 //--Notes:
 //* The `unicode` stdlib package provides functionality for rune classification
+
+package main
+
+import "fmt"
+import "unicode"
+
+type LineCallback func(line string)
