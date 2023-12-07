@@ -24,3 +24,8 @@ import (
 	"os"
 	"strings"
 )
+
+const (
+	CmdHello   = "hello"
+	CmdGoodbye = "bye"
+)
