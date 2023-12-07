@@ -55,3 +55,11 @@ func (m *MemoryUsage) AverageMemoryUsage() int {
 	}
 	return sum / len(m.amount)
 }
+
+//* Using struct embedding, create a Dashboard structure that contains
+//  each dashboard component
+type Dashboard struct {
+	BandwidthUsage
+	CpuTemp
+	MemoryUsage
+}
