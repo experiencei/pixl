@@ -15,3 +15,12 @@
 //
 //--Notes
 //* Use any Reader implementation from the stdlib to implement the program
+
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
