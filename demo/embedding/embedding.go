@@ -12,3 +12,6 @@ const (
 	Ground = iota
 	Air
 )
+
+type BeltSize int
+type Shipping int
