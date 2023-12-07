@@ -35,3 +35,11 @@ func (b *BandwidthUsage) AverageBandwidth() int {
 type CpuTemp struct {
 	temp []Celcius
 }
+
+func (c *CpuTemp) AverageCpuTemp() int {
+	sum := 0
+	for i := 0; i < len(c.temp); i++ {
+		sum += int(c.temp[i])
+	}
+	return sum / len(c.temp)
+}
