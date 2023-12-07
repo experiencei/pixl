@@ -52,3 +52,16 @@ func (s *SpamMail) Ship() Shipping {
 func (s *SpamMail) Convey() BeltSize {
 	return Small
 }
+
+func automate(item WarehouseAutomator) {
+	fmt.Printf("Convey %v on %v conveyor\n", item, item.Convey())
+	fmt.Printf("Ship %v via %v\n", item, item.Ship())
+}
+
+type ToxicWaste struct {
+	weight int
+}
+
+func (t *ToxicWaste) Ship() Shipping {
+	return Ground
+}
