@@ -23,3 +23,24 @@ func (b BeltSize) String() string {
 func (s Shipping) String() string {
 	return []string{"Ground", "Air"}[s]
 }
+
+type Conveyor interface {
+	Convey() BeltSize
+}
+
+type Shipper interface {
+	Ship() Shipping
+}
+
+type WarehouseAutomator interface {
+	Conveyor
+	Shipper
+}
+
+type SpamMail struct {
+	amount int
+}
+
+func (s SpamMail) String() string {
+	return "Spam mail"
+}
