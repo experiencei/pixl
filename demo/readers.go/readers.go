@@ -24,4 +24,12 @@ func main() {
 			sum += num
 		}
 
-		
+			if inputErr == io.EOF {
+			break
+		}
+		if inputErr != nil {
+			fmt.Println("Error reading Stdin:", inputErr)
+		}
+	}
+	fmt.Printf("Sum: %v\n", sum)
+}
