@@ -43,3 +43,15 @@ func (c *CpuTemp) AverageCpuTemp() int {
 	}
 	return sum / len(c.temp)
 }
+
+type MemoryUsage struct {
+	amount []Bytes
+}
+
+func (m *MemoryUsage) AverageMemoryUsage() int {
+	sum := 0
+	for i := 0; i < len(m.amount); i++ {
+		sum += int(m.amount[i])
+	}
+	return sum / len(m.amount)
+}
