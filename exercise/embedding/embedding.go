@@ -9,3 +9,16 @@
 //  each dashboard component
 //* Print out a 5-second average from each component using promoted
 //  methods on the Dashboard
+
+package main
+
+import (
+	"fmt"
+)
+
+type Bytes int
+type Celcius float32
+
+type BandwidthUsage struct {
+	amount []Bytes
+}
