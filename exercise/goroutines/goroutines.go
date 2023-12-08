@@ -34,3 +34,26 @@ import (
 	"time"
 )
  
+//* Sum the numbers in each file noted in the main() function
+func sumFile(rd bufio.Reader) int {
+	sum := 0
+	for {
+		line, err := rd.ReadString('\n')
+		if err == io.EOF {
+			return sum
+		}
+		if err != nil {
+			//* Report any errors to the terminal
+			fmt.Println("Error:", err)
+		}
+		// ReadString returns the delimiter as well (newline).
+		// We need to get the string without the newline,
+		// so we just slice the string up until the last byte.
+		num, err := strconv.Atoi(line[:len(line)-1])
+		if err != nil {
+			//* Report any errors to the terminal
+			fmt.Println("Error:", err)
+		}
+		sum += num
+	}
+}
