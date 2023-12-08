@@ -22,3 +22,15 @@
 //  - os: open files
 //  - io: io.EOF will indicate the end of a file
 //  - time: pause the program to wait for the goroutines to finish
+
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"io"
+	"os"
+	"strconv"
+	"time"
+)
+ 
