@@ -34,3 +34,29 @@ func doubler(jobs, results chan Job, control chan ControlMsg) {
 		}
 	}
 }
+
+func main() {
+	jobs := make(chan Job, 50)
+	results := make(chan Job, 50)
+	control := make(chan ControlMsg)
+
+	go doubler(jobs, results, control)
+
+	for i := 0; i < 30; i++ {
+		jobs <- Job{i, 0}
+	}
+
+	for {
+		select {
+		case result := <-results:
+			fmt.Println(result)
+		case <-time.After(500 * time.Millisecond):
+			fmt.Println("timed out")
+			control <- DoExit
+			// Wait for response from goroutine before exit.
+			<-control
+			fmt.Println("program exit")
+			return
+		}
+	}
+}
