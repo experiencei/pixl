@@ -26,3 +26,8 @@ import (
 	"sync"
 	"unicode"
 )
+
+type Count struct {
+	count int
+	sync.Mutex
+}
