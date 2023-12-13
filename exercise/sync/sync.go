@@ -31,3 +31,7 @@ type Count struct {
 	count int
 	sync.Mutex
 }
+
+func getWords(line string) []string {
+	return strings.Split(line, " ")
+}
