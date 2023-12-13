@@ -15,4 +15,14 @@
 //* Use `cat FILE | go run ./exercise/sync` to analyze a file
 //* Use any synchronization techniques to implement the program:
 //  - Channels / mutexes / wait groups
- 
+
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+	"sync"
+	"unicode"
+)
