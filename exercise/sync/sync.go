@@ -9,3 +9,10 @@
 //  within a goroutine
 //* When the program finishes, display the total number of letters counted
 //
+//--Notes:
+//* Use CTRL+D (Mac/Linux) or CTRL+Z (Windows) to signal EOF, if manually
+//  entering data
+//* Use `cat FILE | go run ./exercise/sync` to analyze a file
+//* Use any synchronization techniques to implement the program:
+//  - Channels / mutexes / wait groups
+ 
