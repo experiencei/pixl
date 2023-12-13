@@ -35,3 +35,14 @@ type Count struct {
 func getWords(line string) []string {
 	return strings.Split(line, " ")
 }
+
+//* Count the total number of letters in any chosen input
+func countLetters(word string) int {
+	letters := 0
+	for _, ch := range word {
+		if unicode.IsLetter(ch) {
+			letters += 1
+		}
+	}
+	return letters
+}
