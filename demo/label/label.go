@@ -30,6 +30,21 @@ outer: //label, it doesn't conflict with other names
         }
     }
  
-    fmt.Println("Next instruction after the break.")
-
+    fmt.Println("Next instruction after the break.") 
+ 
+    // **GOTO STATEMENT **//
+    
+    //the following piece of code creates a loop like a for statement does
+    i := 0
+loop: // label
+    if i < 5 {
+        fmt.Println(i)
+        i++
+        goto loop
+    }
+ 
+    //  goto todo //ERROR it's not permitted to jump over the declaration of x
+    //  x := 5
+    // todo:
+    //  fmt.Println("something here")
 	}
