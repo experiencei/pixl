@@ -30,4 +30,6 @@ outer: //label, it doesn't conflict with other names
         }
     }
  
-    // fmt.Println("Next instruction after the break.")
+    fmt.Println("Next instruction after the break.")
+
+	}
