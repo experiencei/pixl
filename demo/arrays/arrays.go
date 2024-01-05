@@ -57,4 +57,6 @@ func main() {
 	}
 
 	fmt.Println("The weekend is only true" , weekend)
+
+	
 }
