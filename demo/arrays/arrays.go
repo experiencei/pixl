@@ -48,4 +48,13 @@ func main() {
 	}
 
 	_ = carMatrix
+
+	// using keyed and unkeyed element
+
+	weekend := [7]bool{
+		5 : true,
+		6 : true,
+	}
+
+	fmt.Println("The weekend is only true" , weekend)
 }
