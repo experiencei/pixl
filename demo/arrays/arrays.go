@@ -58,5 +58,11 @@ func main() {
 
 	fmt.Println("The weekend is only true" , weekend)
 
-	
+	// un unkeyed element gets its index from the last keyed element
+	cities := [...]string{
+		5:        "Paris",
+		"London", // this is at index 6
+		1:        "NYC",
+}
+ _ = cities
 }
