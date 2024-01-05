@@ -22,6 +22,7 @@ func checkCleanliness(rooms [4]Room) {
 
 
 func main() {
+    // the ellipsis operator (...) finds out automatically the length of the array
 	rooms := [...]Room{
 		{name: "Office"},
 		{name: "Warehouse"},
@@ -37,4 +38,14 @@ func main() {
 	rooms[3].cleaned = true // element 4
 
 	checkCleanliness(rooms)
+
+
+	//creating multi dimensional array
+
+	carMatrix := [2][3]int{
+		{1 , 22 },
+		{0 , 4},
+	}
+
+	_ = carMatrix
 }
