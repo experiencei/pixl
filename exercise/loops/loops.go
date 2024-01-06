@@ -33,5 +33,20 @@ func main() {
 		} else {
 			fmt.Println(i)
 		}
+
 	}
+
+	  // Noted Priority matters
+	for i := 0 ; i <= 50 ; i++ {
+		if i % 3 == 0 {
+			fmt.Println("Fizz")
+		} else if i % 5 == 0 {
+			fmt.Println("Buzz")
+		} else if i % 3 == 0 && i % 5 == 0 {
+			fmt.Println("FizzBuzz")
+		}
+}
+
+
+
 }
