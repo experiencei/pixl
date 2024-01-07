@@ -42,6 +42,9 @@ func main() {
 		}
 		//* Print the sum of the dice roll
 		fmt.Println("Total rolled:", sum)
+		evenNums := sum % 2 == 0;
+	  oddNums :=  sum % 2 == 1;
+	
 		switch sum := sum; {
 		case sum == 2 && dice == 2:
 			//  - "Snake eyes": when the total roll is 2, and total dice is 2
@@ -49,10 +52,10 @@ func main() {
 		case sum == 7:
 			//  - "Lucky 7": when the total roll is 7
 			fmt.Println("Lucky Seven!")
-		case sum%2 == 0:
+		case evenNums:
 			//  - "Even": when the total roll is even
 			fmt.Println("Even")
-		case sum%2 == 1:
+		case oddNums:
 			//  - "Odd": when the total roll is odd
 			fmt.Println("Odd")
 		}
