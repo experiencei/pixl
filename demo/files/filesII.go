@@ -6,7 +6,7 @@ import (
     "os"
 )
 
-func main() {
+func mainII() {
 
     // opening the file in write-only mode if the file exists and then it truncates the file.
     // if the file doesn't exist it creates the file with 0644 permissions
