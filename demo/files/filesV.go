@@ -7,7 +7,7 @@ import (
     "os"
 )
 
-func main() {
+func mainV() {
 
     // opening the file in read-only mode. The file must exist (in the current working directory)
     // use a valid path!
