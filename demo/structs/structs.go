@@ -62,6 +62,7 @@ func main() {
 	// comparing struct values
     // two struct values are equal if their corresponding fields are equal.
     randomBook := book{title: "Random Title", author: "John Doe", year: 100}
-    fmt.Println(randomBook == lastBook) // => false
+		_ = randomBook
+    // fmt.Println(randomBook == _) // => false
 
 }
