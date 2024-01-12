@@ -18,11 +18,11 @@ type book struct {
 	year   int
 }
 
-// combining different fields of the same type on the same line
-type book1 struct {
-	title, author string
-	year, pages   int
-}
+// // combining different fields of the same type on the same line
+// type book1 struct {
+// 	title, author string
+// 	year, pages   int
+// }
 
 type Bus struct{
 	FrontSeat Passenger
