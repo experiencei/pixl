@@ -46,4 +46,10 @@ func main() {
 	bus := Bus{heidi}
 	fmt.Println(bus)
 	fmt.Println(bus.FrontSeat.Name, "is in the front seat")
+
+	// comparing struct values
+    // two struct values are equal if their corresponding fields are equal.
+    randomBook := book{title: "Random Title", author: "John Doe", year: 100}
+    fmt.Println(randomBook == lastBook) // => false
+
 }
