@@ -11,6 +11,18 @@ type Passenger struct {
 	Boarded      bool
 }
 
+// creating a struct type
+type book struct {
+	title  string //the fields of the book struct
+	author string //each field must be unique inside a struct
+	year   int
+}
+
+// combining different fields of the same type on the same line
+type book1 struct {
+	title, author string
+	year, pages   int
+}
 
 type Bus struct{
 	FrontSeat Passenger
