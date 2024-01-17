@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func greet() {
 	fmt.Println("Hello from greet function")
@@ -22,12 +25,6 @@ func double(x int) int  {
 // The function may be called with zero or more arguments for that parameter.
 // If the function takes parameters of different types, only the last parameter of a function can be variadic.
 
-package main
-
-import (
-    "fmt"
-    "strings"
-)
 
 // creating a variadic function
 func f1(a ...int) {
@@ -53,6 +50,14 @@ func sumAndProduct(a ...float64) (float64, float64) {
     return sum, product
 }
 
+
+// mixing variadic and non-variadic parameters is allowed
+// non-variadic parameters are always before the variadic parameter
+func personInformation(age int, names ...string) string {
+	fullName := strings.Join(names, " ")
+	returnString := fmt.Sprintf("Age: %d, Full Name:%s", age, fullName)
+	return returnString
+}
 
 func main() {
 	greet()
