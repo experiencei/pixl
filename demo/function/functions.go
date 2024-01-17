@@ -71,5 +71,24 @@ func main() {
 	anotherBakersDozen := add(double(6), 1)
 	fmt.Println("Have another", anotherBakersDozen)
 
+
+
+	 // calling variadic functions
+    // a variadic function can be invoked with zero or more arguments
+    f1(1, 2, 3, 4)
+
+    f1() // a is: []int(nil)
+
+    // an example of a well-known variadic function is append() built-in function.
+    // it appends items to an existing slice and returns back the same slice.
+    nums := []int{1, 2}
+    nums = append(nums, 3, 4)
+
+    s, p := sumAndProduct(2., 5., 10.)
+    fmt.Println(s, p) // -> 17 100
+
+    info := personInformation(35, "Wolfgang", "Amadeus", "Mozart")
+    fmt.Println(info) // => Age: 35, Full Name:Wolfgang Amadeus Mozart
+
 }
 
