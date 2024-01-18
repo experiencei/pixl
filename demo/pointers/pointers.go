@@ -1,3 +1,5 @@
+// Go is a pass by value language (no exception here)
+
 package main
 
 import "fmt"
@@ -16,6 +18,11 @@ func replace(old *string, new string, counter *Counter) {
 	*old = new
 	increment(counter)
 }
+
+
+
+
+
 
 func main() {
 	counter := Counter{}
