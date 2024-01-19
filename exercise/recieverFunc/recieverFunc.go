@@ -26,6 +26,7 @@ type Player struct {
 	energy, maxEnergy uint
 }
 
+
 func (player *Player) addHealth(amount uint) {
 	player.health += amount
 	if player.health > player.maxHealth {
